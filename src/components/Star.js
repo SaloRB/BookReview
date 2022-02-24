@@ -1,8 +1,12 @@
+// Dependencies
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const Star = ({rating}) => {
+// Styles
+import { styles } from 'styles/StarStyle';
+
+const Star = ({ rating }) => {
   const TOTAL_STARS = [0, 1, 2, 3, 4];
 
   return (
@@ -16,10 +20,3 @@ const Star = ({rating}) => {
 };
 
 export default Star;
-
-const styles = StyleSheet.create({
-  stars: {
-    flexDirection: 'row',
-    paddingVertical: 10,
-  },
-});
