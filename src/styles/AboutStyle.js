@@ -1,8 +1,8 @@
 // Dependencies
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  view: {flex: 1, padding: 40},
+  view: { flex: 1, padding: 40 },
   header: {
     marginVertical: 20,
     textAlign: 'center',
@@ -12,5 +12,9 @@ export const styles = StyleSheet.create({
     marginVertical: 20,
     alignSelf: 'center',
   },
-  text: {fontSize: 14, color: '#444', marginTop: 20},
+  text: {
+    fontSize: 14,
+    color: '#444',
+    marginTop: 20,
+  },
 });

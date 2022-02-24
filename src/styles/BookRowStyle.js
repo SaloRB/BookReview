@@ -1,5 +1,5 @@
 // Dependencies
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   row: {
@@ -35,7 +35,14 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 2,
   },
-  image: {width: 60, height: 80},
-  even: {backgroundColor: '#fff'},
-  odd: {backgroundColor: '#f3f3f7'},
+  image: {
+    width: 60,
+    height: 80,
+  },
+  even: {
+    backgroundColor: '#fff',
+  },
+  odd: {
+    backgroundColor: '#f3f3f7',
+  },
 });

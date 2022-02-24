@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   header: {
@@ -16,6 +16,13 @@ export default StyleSheet.create({
     padding: 30,
     fontWeight: '200',
   },
-  view: {alignItems: 'center', backgroundColor: '#fff'},
-  image: {width: 50, height: 50, marginTop: 30},
+  view: {
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  image: {
+    width: 50,
+    height: 50,
+    marginTop: 30,
+  },
 });

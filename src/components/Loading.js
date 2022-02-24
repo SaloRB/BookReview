@@ -1,11 +1,11 @@
 // Dependencies
 import React from 'react';
-import {ActivityIndicator, View} from 'react-native';
+import { ActivityIndicator, View } from 'react-native';
 
 // Styles
-import {styles} from 'styles/LoadingStyle';
+import { styles } from 'styles/LoadingStyle';
 
-function Loading({loading, children}) {
+function Loading({ loading, children }) {
   if (loading) {
     return (
       <View style={styles.container}>
