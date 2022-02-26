@@ -4,7 +4,6 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
-    height: 100,
   },
   edges: {
     flex: 1,
