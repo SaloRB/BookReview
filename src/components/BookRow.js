@@ -13,6 +13,7 @@ import { styles } from 'styles/BookRowStyle';
 
 const BookRow = ({ book, index, navigation }) => {
   const { id, title, author, image, rating } = book;
+
   return (
     <View
       key={index}
@@ -32,7 +33,7 @@ const BookRow = ({ book, index, navigation }) => {
           style={styles.button}
           onPress={() => {
             navigation.navigate('Info', {
-              book: { id, title, author, image, rating },
+              book: { id, title, author, image },
             });
           }}>
           <Text>Info</Text>
