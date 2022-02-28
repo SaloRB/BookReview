@@ -52,7 +52,7 @@ const AddReview = ({ route, navigation }) => {
           'Content-Type': 'application/json',
         },
       });
-      navigation.navigate('List', { reload: true });
+      navigation.goBack();
     } catch (err) {
       console.log(err);
     }
