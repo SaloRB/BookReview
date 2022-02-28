@@ -14,17 +14,21 @@ const RootNavigator = createNativeStackNavigator();
 function Root() {
   return (
     <NavigationContainer>
-      <RootNavigator.Navigator mode="modal" headerMode="none">
-        <RootNavigator.Screen
-          name="root"
-          component={TabNavigator}
-          options={{ headerShown: false }}
-        />
-        <RootNavigator.Screen
-          name="reviews"
-          component={AddReview}
-          options={{ headerShown: false }}
-        />
+      <RootNavigator.Navigator>
+        <RootNavigator.Group>
+          <RootNavigator.Screen
+            name="root"
+            component={TabNavigator}
+            options={{ headerShown: false }}
+          />
+        </RootNavigator.Group>
+        <RootNavigator.Group screenOptions={{ presentation: 'modal' }}>
+          <RootNavigator.Screen
+            name="reviews"
+            component={AddReview}
+            options={{ headerShown: false }}
+          />
+        </RootNavigator.Group>
       </RootNavigator.Navigator>
     </NavigationContainer>
   );
